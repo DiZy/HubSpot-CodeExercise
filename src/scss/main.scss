@@ -1,0 +1,16 @@
+body {
+	margin:0;
+}
+#testimonial{
+	background-color:#F9F8F7;
+	padding:25px;
+	.blockquote {
+		margin:auto;
+		width:20%;
+		border-left: 1px solid orange;
+		padding-left:20px;
+		p {
+			font-size:25px;
+		}
+	}
+}

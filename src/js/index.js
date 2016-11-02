@@ -3,10 +3,11 @@ var app = express();
 var path = require('path');
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'));
-
+app.use(express.static(__dirname + '/assets'));
 app.get('/', function(req, res) {
     res.render('pages/index', {
-    	test: "testing"
+    	quote: "testing",
+    	author: "david z"
     });
 });
 
